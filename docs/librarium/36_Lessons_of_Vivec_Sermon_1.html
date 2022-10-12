@@ -1,5 +1,7 @@
-<!DOCTYPE html
-  SYSTEM "about:legacy-compat">
+<!DOCTYPE html>
+<!-- 2022-10-12 ebb: CHANGES TO XSLT: UPDATE OUTPUT LINE TO PRODUCE JUST <!DOCTYPE html>
+Add the xmlns to the SVG root element for each page output: xmlns="http://www.w3.org/2000/svg" 
+-->
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:xs="http://www.w3.org/2001/XMLSchema">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -101,7 +103,8 @@
             
             <p>The ending of the words is ALMSIVI.</p>
             </section>
-         <section id="svg"><svg viewBox="0 0 550 1000" preserveAspectRatio="xMinYMin meet">&gt;
+         <section id="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 1000" preserveAspectRatio="xMinYMin meet">
                <!--maxPersonCount 58--><!--max of all the Y-values 174--><!--maxGroupCount 49--><!--maxLocationCount 174--><!--maxItemCount 47-->
                <g transform="translate(80, 900)">
                   <line x1="0" y1="0" x2="1000" y2="0" stroke="indigo"></line>
@@ -120,7 +123,9 @@
                   <text x="400" y="30" style="writing-mode: tb; glyph-orientation-vertical: 90;"> Locations </text>
                   <text x="-20" y="-200" style="writing-mode: tb; glyph-orientation-vertical: 90;"> Quantity of ID used</text>
                   <text x="125" y="-800">Count of Morrowind References</text>
-               </g></svg></section>
+               </g></svg>
+         </section>
+        
       </div>
    </body>
 </html>
